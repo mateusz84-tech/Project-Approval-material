@@ -22,29 +22,38 @@
 <section class="section">
     <div class="allClassesContainer">
         <form:form method="post" modelAttribute="inz" action="/register-inz">
-            <div class="control">
+            <div class="field">
                 <form:label path="firstName" class="label"/>Imię:
-                <form:input path="firstName"/>
+                <form:input  class="input is-small" path="firstName" placeholder="Text input: Imię"/>
             </div>
-            <div class="control">
+            <div class="field">
                 <form:label path="lastName"/>Nazwisko:
-                <form:input path="lastName"/>
+                <form:input class="input is-small" path="lastName" placeholder="Text input: Nazwisko"/>
             </div>
-            <div class="control">
+            <div class="field">
                 <form:label path="username"/>Nazwa użytkownika:
-                <form:input path="username"/>
+                <form:input class="input is-small" path="username" placeholder="Text input: Login"/>
             </div>
-            <div class="control">
+            <div class="field">
                 <form:label path="email"/>Email:
-                <form:input path="email"/>
+                <p class="control has-icons-left has icon-right">
+                <form:input class="input is-small" path="email" placeholder="Text input: Adres email"/>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                </p>
             </div>
-            <div class="control">
+            <div class="field">
                 <form:label path="password"/>Hasło:
-                <form:input path="password"/>
+                <p class="control has-icons-left has icon-right">
+                <form:input class="input is-small" path="password" placeholder="Text input: Hasło"/>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                </span>
+                </p>
             </div>
-            <div class="control">
-                <form:button type="submit"
-                             class="button is primary">Zarejestruj</form:button>
+            <div class="buttons">
+                <form:button type="submit" class="button is primary">Zarejestruj</form:button>
                 <form:button type="reset" class="button is secondary">Wyczyść</form:button>
             </div>
             <security:csrfInput/>
