@@ -18,26 +18,38 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-
-<h2>Czy na pewno chcesz usunąć:</h2><br>
+<body>
+<div class="column is-mobile is-centered">
+    <div class="column is-half">
+        <p class="bd-notification is-primary">
+            <code class="html">Czy na pewno chcesz usunąć:</code><br>
+        </p>
+    </div>
 <div>
     <p>Nazwa: ${materials.materials}</p><br>
 
 </div>
+<div class="field has-addons">
 <form:form method="post" modelAttribute="materials" action="/material/delete">
 <%--    <input:hidden path="materials" id="${materials.id}" name="id"/>--%>
-    <div class="buttons">
         <form:hidden path="id"/>
-        <form:button class="button is-red">Tak</form:button>
-    </div>
+        <button class="button is-danger is-outlined">
+            <span>Tak</span>
+            <span class="icon is-small">
+                <i class="fas fa-times"></i>
+            </span>
+        </button>
 </form:form>
 
 <form:form method="get" modelAttribute="materials" action="/material/list">
-    <div class="buttons">
-        <form:button class="button is-secondary">Nie</form:button>
-    </div>
+    <button class="button is-danger is-outlined">
+        <span>Nie</span>
+        <span class="icon is-small">
+            <i class="fas"></i>
+        </span>
+    </button>
+
 </form:form>
 </div>
-
 </body>
 </html>
