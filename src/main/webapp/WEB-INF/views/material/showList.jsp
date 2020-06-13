@@ -44,7 +44,7 @@
             <td>${material.updated}</td>
             <td><a href="${material.link}">Link</a></td>
             <td><a href="/material/edit?id=${material.id}">Edytuj</a></td>
-            <td><a href="/material/delete?id${material.id}">Usuń</a></td>
+            <td><a href="/material/delete?id=${material.id}">Usuń</a></td>
         </tr>
         </c:forEach>
     </td>

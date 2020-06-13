@@ -18,7 +18,7 @@
 <body>
 <h2>Dostępne akcje</h2>
 <a href="${pageContext.request.contextPath}/material/add">Dodaj nowy materiał</a><br/>
-<a href="${pageContext.request.contextPath}material/delete">Usuń materiał</a><br/>
+<a href="${pageContext.request.contextPath}/material/delete">Usuń materiał</a><br/>
 <a href="${pageContext.request.contextPath}/addProject">Dodaj nowy projekt</a><br/>
 <a href="${pageContext.request.contextPath}/material/list">Lista materiałów</a><br/>
 <a href="http://localhost:8080/logout">Wyloguj</a>

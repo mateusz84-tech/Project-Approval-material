@@ -1,3 +1,5 @@
+
+<%@ taglib prefix="input" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
@@ -16,17 +18,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body>
+
 <h2>Czy na pewno chcesz usunąć:</h2><br>
 <div>
     <p>Nazwa: ${materials.materials}</p><br>
-</div>
 
-<div>
-    <form method="post">
-        <input type="hidden" value="${materials.id}" name="id">
-        <button type="submit">Tak</button>
-    </form>
+</div>
+<form:form method="post" modelAttribute="materials" action="/material/delete">
+<%--    <input:hidden path="materials" id="${materials.id}" name="id"/>--%>
+    <div class="buttons">
+        <form:hidden path="id"/>
+        <form:button class="button is-red">Tak</form:button>
+    </div>
+</form:form>
+
+<form:form method="get" modelAttribute="materials" action="/material/delete">
+    <div class="buttons">
+        <form:button class="button is-secondary">Nie</form:button>
+    </div>
+</form:form>
 </div>
 
 </body>
