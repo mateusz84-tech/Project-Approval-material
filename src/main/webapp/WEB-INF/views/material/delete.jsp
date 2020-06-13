@@ -32,7 +32,7 @@
     </div>
 </form:form>
 
-<form:form method="get" modelAttribute="materials" action="/material/delete">
+<form:form method="get" modelAttribute="materials" action="/material/list">
     <div class="buttons">
         <form:button class="button is-secondary">Nie</form:button>
     </div>
