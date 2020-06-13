@@ -17,9 +17,9 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-<section class="section">
 <h2>Lista materiałów</h2>
-<table border="">
+    <div class="table-container">
+<table class="table">
     <tr>
         <th>Lp.</th>
         <th>Nazwa</th>
@@ -30,9 +30,9 @@
         <th>Data edycji</th>
         <th>Link do dokumentów</th>
         <th>Akcje</th>
-    </tr>
-    <tr>
+    <td>
         <c:forEach items="${materials}" var="material" varStatus="stat">
+        <tr>
             <td>${stat.count}</td>
             <td>${material.materials}</td>
             <td>${material.description}</td>
@@ -40,12 +40,16 @@
             <td>${material.comments}</td>
             <td>${material.created}</td>
             <td>${material.updated}</td>
-            <td>${material.link}</td>
-            <td><a href="http://localhost:8080/edit">Edytuj</a></td>
-            <td><a href="http://localhost:8080/delete">Usuń</a></td>
+            <td><a htef="${material.link}">Link</a></td>
+            <td><a href="${pageContext.request.contextPath}/edit?id=${material.id}">Edytuj</a></td>
+            <td><a>Usuń</a></td>
+        </tr>
         </c:forEach>
-    </tr>
+    </td>
+</tr>
 </table>
-</section>
+    </div>
+<a href="http://localhost:8080/addMaterial">Dodaj następny</a><br>
+<a href="http://localhost:8080/user/action">Powrót do głównej strony</a>
 </body>
 </html>

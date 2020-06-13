@@ -33,8 +33,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.jdbcAuthentication()
                 .passwordEncoder(passwordEncoder())
                 .dataSource(dataSource)
-                .usersByUsernameQuery("SELECT username, password, true FROM (SELECT u.username, u.password, true FROM users u UNION SELECT i.username, i.password, true FROM inspectors i) users WHERE username = ?")
-                .authoritiesByUsernameQuery("SELECT username, role FROM (SELECT u.username, 'ROLE_USER' as role FROM users u UNION SELECT i.username, 'ROLE_INSP' as role FROM inspectors i) users WHERE username =?");
+                .usersByUsernameQuery("SELECT username, password, true FROM (SELECT u.username, u.password, " +
+                        "true FROM users u UNION SELECT i.username, i.password, true FROM inspectors i) users WHERE username = ?")
+                .authoritiesByUsernameQuery("SELECT username, role FROM (SELECT u.username, 'ROLE_USER' as role FROM users u UNION SELECT i.username, " +
+                        "'ROLE_INSP' as role FROM inspectors i) users WHERE username =?");
     }
 
     @Override
