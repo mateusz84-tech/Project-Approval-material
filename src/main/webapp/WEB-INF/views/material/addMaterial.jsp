@@ -19,7 +19,7 @@
 <body>
 <section class="section">
     <div class="allClassesContainer">
-<form:form method="post" modelAttribute="material" action="/addMaterial">
+<form:form method="post" modelAttribute="materials" action="/material/add">
     <div class="field">
         <div class="control">
             <form:label path="materials"/>Nazwa materiału:

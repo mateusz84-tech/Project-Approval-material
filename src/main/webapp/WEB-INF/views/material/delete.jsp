@@ -17,10 +17,17 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-<h2>Usuń materiał</h2>
-<form:form method="post" modelAttribute="material" action="/deleteMaterial">
-    Usuń:
-    <form:label path="name"/>
-</form:form>
+<h2>Czy na pewno chcesz usunąć:</h2><br>
+<div>
+    <p>Nazwa: ${materials.materials}</p><br>
+</div>
+
+<div>
+    <form method="post">
+        <input type="hidden" value="${materials.id}" name="id">
+        <button type="submit">Tak</button>
+    </form>
+</div>
+
 </body>
 </html>

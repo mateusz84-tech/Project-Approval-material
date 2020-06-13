@@ -1,5 +1,6 @@
 package pl.matkoc.material_approval.domain.model;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -11,8 +12,9 @@ import java.time.LocalDate;
 @Table(name = "materials")
 @Getter
 @Setter
-@ToString
+@ToString @EqualsAndHashCode(callSuper = true)
 public class Material extends ParentEntity{
+
 
     @Column(nullable = false, unique = true)
     private String materials;
@@ -43,75 +45,6 @@ public class Material extends ParentEntity{
     @ManyToOne
     private Project project;
 
-    public String getLink() {
-        return link;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
-    }
-
-    public String getMaterials() {
-        return materials;
-    }
-
-    public void setMaterials(String materials) {
-        this.materials = materials;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getApproved() {
-        return approved;
-    }
-
-    public void setApproved(String approved) {
-        this.approved = approved;
-    }
-
-    public String getComments() {
-        return comments;
-    }
-
-    public void setComments(String comments) {
-        this.comments = comments;
-    }
-
-    public LocalDate getCreated() {
-        return created;
-    }
-
-    public void setCreated(LocalDate created) {
-        this.created = created;
-    }
-
-    public LocalDate getUpdated() {
-        return updated;
-    }
-
-    public void setUpdated(LocalDate updated) {
-        this.updated = updated;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Project getProject() {
-        return project;
-    }
-
-    public void setProject(Project project) {
-        this.project = project;
+    public Material() {
     }
 }

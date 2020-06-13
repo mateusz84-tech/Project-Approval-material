@@ -22,10 +22,10 @@
 </p>
 <div align="center">
 
-    <a href="${pageContext.request.contextPath}/addMaterial">Dodanie nowego materiału</a><br/>
-    <a href="${pageContext.request.contextPath}/deleteMaterial">Usuń materiał</a><br/>
+    <a href="${pageContext.request.contextPath}material/add">Dodaj nowy materiał</a><br/>
+    <a href="${pageContext.request.contextPath}material/deleteMaterial">Usuń materiał</a><br/>
     <a href="${pageContext.request.contextPath}/addProject">Dodaj nowy projekt</a><br/>
-    <a href="${pageContext.request.contextPath}/list">Lista materiałów</a>
+    <a href="${pageContext.request.contextPath}material/list">Lista materiałów</a>
 </div>
 </body>
 </html>

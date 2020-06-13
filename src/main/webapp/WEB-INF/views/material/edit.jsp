@@ -19,7 +19,7 @@
 <body>
 <section class="section">
     <div class="allClassesContainer">
-        <form:form method="post" modelAttribute="materials" action="/edit">
+        <form:form method="post" modelAttribute="materials" action="/material/edit">
             <div class="field">
                 <div class="control">
                     <form:label path="materials"/>Nazwa materiału:
@@ -30,7 +30,7 @@
                 <div class="control">
                     <form:label path="description"/>Opis:
                     <form:textarea class="textarea is-focused"
-                                   placeholder="Krótki opis materiału, zastosowanie"
+                                   placeholder="Krótki opis materiału, przeznaczenie, miejsce wbudowania"
                                    path="description"/>
                 </div>
             </div>
@@ -41,6 +41,7 @@
                 </div>
             </div>
             <div class="buttons">
+                <form:hidden path="id"/>
                 <form:button type="submit" class="button is-primary">Edytuj</form:button>
             </div>
         </form:form>

@@ -1,5 +1,6 @@
 package pl.matkoc.material_approval.controller;
 
+import org.dom4j.rule.Mode;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -8,7 +9,7 @@ import pl.matkoc.material_approval.domain.model.Material;
 
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/material")
 public class MaterialController {
 
     private final MaterialDao materialDao;
@@ -17,35 +18,21 @@ public class MaterialController {
         this.materialDao = materialDao;
     }
 
-    @GetMapping("/addMaterial")
-    public String prepareAddMaterialPage(Model model){
-        model.addAttribute("material", new Material());
+    @GetMapping("/add")
+    public String prepareAddMaterial(Model model){
+        model.addAttribute("materials", new Material());
         return "material/addMaterial";
     }
 
-    // przekierowanie do akcji kontrolera z listą materiałów
-    @PostMapping("/addMaterial")
-    public String processAddMaterialPage(Material material){
+    @PostMapping("/add")
+    public String procesAddMaterial(Material material){
         materialDao.createMaterial(material);
-        return "redirect:/list";
+        return "redirect:/material/list";
     }
 
-    // akcja usuwająca materiał z listy
-    @GetMapping("/deleteMaterial")
-    public String prepareDeleteMaterialPage(Model model){
-        model.addAttribute("material", new Material());
-        return "material/delete";
-    }
-    @PostMapping("/deleteMaterial")
-    @ResponseBody
-    public String processDeleteMaterialPage(Material material){
-        materialDao.delete(material);
-        return "Usunięto materiał z listy";
-    }
-
-    // akcja modyfikująca materiał
+    // edycja materiału
     @GetMapping("/edit")
-    public String prepareProcesEditMaterial(Model model, @RequestParam Long id){
+    public String prepareEditMaterial(Model model, @RequestParam Long id){
         Material material = materialDao.readById(id);
         model.addAttribute("materials", material);
         return "material/edit";
@@ -59,8 +46,22 @@ public class MaterialController {
         original.setDescription(material.getDescription());
         original.setLink(material.getLink());
 
-        materialDao.update(original);
-        return "redirect:list";
+        materialDao.update(material);
+        return "redirect:/material/list";
+    }
+
+    @GetMapping("/delete")
+    public String prepareDeleteMaterial(Model model,
+                                        @RequestParam Long id){
+        Material material = materialDao.readById(id);
+        model.addAttribute("materials", material);
+        return "material/delete";
+    }
+    @PostMapping("/delete")
+    public String prepareDeleteMaterial(Material material){
+        Material original = materialDao.readById(material.getId());
+        materialDao.delete(material);
+        return "redirect:/material/list";
     }
 
     // akcja zwraca listę materiałów

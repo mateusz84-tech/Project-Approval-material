@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body>
-<h2>Lista materiałów</h2>
+<body style="background-color: grey">
+<h2 style="color:cornsilk">Lista materiałów</h2><br>
+<a href="http://localhost:8080/material/add">Dodaj następny</a><br>
+<a href="http://localhost:8080/user/action">Powrót do głównej strony</a>
     <div class="table-container">
-<table class="table">
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" style="background-color: lightsteelblue">
     <tr>
         <th>Lp.</th>
         <th>Nazwa</th>
@@ -40,16 +42,15 @@
             <td>${material.comments}</td>
             <td>${material.created}</td>
             <td>${material.updated}</td>
-            <td><a htef="${material.link}">Link</a></td>
-            <td><a href="${pageContext.request.contextPath}/edit?id=${material.id}">Edytuj</a></td>
-            <td><a>Usuń</a></td>
+            <td><a href="${material.link}">Link</a></td>
+            <td><a href="/material/edit?id=${material.id}">Edytuj</a></td>
+            <td><a href="/material/delete?id${material.id}">Usuń</a></td>
         </tr>
         </c:forEach>
     </td>
 </tr>
 </table>
     </div>
-<a href="http://localhost:8080/addMaterial">Dodaj następny</a><br>
-<a href="http://localhost:8080/user/action">Powrót do głównej strony</a>
+
 </body>
 </html>
