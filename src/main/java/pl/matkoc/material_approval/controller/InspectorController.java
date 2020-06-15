@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pl.matkoc.material_approval.domain.dao.InspectorDao;
 
+
 @Controller
 @RequestMapping("/")
 public class InspectorController {
@@ -19,5 +20,4 @@ public class InspectorController {
     public String actionInsp(){
         return "inspector/action";
     }
-
 }
