@@ -1,5 +1,6 @@
 package pl.matkoc.material_approval.domain.model;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -13,7 +14,7 @@ import javax.persistence.Table;
 @Table(name = "inspectors")
 @Getter
 @Setter
-@ToString
+@ToString @EqualsAndHashCode
 public class Inspector extends ParentEntity{
 
     @Column(nullable = false, unique = true)
@@ -26,9 +27,13 @@ public class Inspector extends ParentEntity{
     private String email;
     @Column(nullable = false, unique = true)
     private String password;
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String industry;
 
     @ManyToOne
     private Project project;
+
+    public Inspector(){
+
+    }
 }
