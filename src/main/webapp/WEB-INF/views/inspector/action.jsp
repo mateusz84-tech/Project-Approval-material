@@ -19,8 +19,7 @@
 <h2></h2>
 <h1 align="center">Dostępne akcje</h1>
 <div align="center">
-<a href="http://localhost:8080/list">Wyświetl listę materiałów</a><br>
-    <a href="http://localhost:8080/confirmMaterial">Zatwierdź / Dodaj uwagi</a><br>
+<a href="http://localhost:8080/listMaterial">Wyświetl listę materiałów</a><br>
 <a href="http://localhost:8080/logout">Wyloguj</a>
 </div>
 </body>
