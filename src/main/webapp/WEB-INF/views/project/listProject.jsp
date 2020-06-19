@@ -11,6 +11,12 @@
     <title>Lista projektów</title>
 </head>
 <body>
+<p>Lista projektów:</p>
+${project.name}
+${project.number}
 
+<nav class="breadcrumb is-large" aria-label="breadcrumbs">
+    <a href="http://localhost:8080/user/action">Powrót do strony wyboru.</a>
+</nav>
 </body>
 </html>

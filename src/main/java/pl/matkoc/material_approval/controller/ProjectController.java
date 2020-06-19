@@ -3,10 +3,7 @@ package pl.matkoc.material_approval.controller;
 import org.slf4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import pl.matkoc.material_approval.domain.dao.ProjectDao;
 import pl.matkoc.material_approval.domain.model.Project;
 
@@ -27,9 +24,9 @@ public class ProjectController {
     }
 
     @PostMapping("/addProject")
-    public String processAddProjectPage(Project project){
+    public String processAddProjectPage(@ModelAttribute Project project){
         projectDao.createProject(project);
-        return "redirect:/project/listProject";
+        return "project/listProject";
     }
 
     public String prepareListProject(Model model){

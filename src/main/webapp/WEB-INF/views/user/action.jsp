@@ -25,5 +25,7 @@
         <li><a href="http://localhost:8080/logout">Wyloguj</a></li>
     </ul>
 </nav>
+<p>Lista projektów</p>
+${project}
 </body>
 </html>

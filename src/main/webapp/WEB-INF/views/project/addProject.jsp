@@ -17,14 +17,27 @@
 </head>
 <body>
 <h2>Dodaj nowy projekt</h2>
+<section class="section">
+    <div class="allClassesContainer">
 <form:form method="post" modelAttribute="project" action="/project/addProject">
-    Numer projekty:
-    <form:label path="number"/>
+    <div class="field">
+    <div class="control">
+    <form:label path="number"/>Numer projekty:
     <form:input path="number"/>
-    Nazwa projektu:
-    <form:label path="name"/>
+    </div>
+    </div>
+    <div class="field">
+        <div class="control">
+    <form:label path="name"/>Nazwa projektu:
     <form:input path="name"/>
-    <form:button>Dodaj</form:button>
+        </div>
+    </div>
+    <div class="buttons">
+        <form:button class="button is-primary">Dodaj</form:button>
+    </div>
 </form:form>
+    </div>
+
+</section>
 </body>
 </html>
