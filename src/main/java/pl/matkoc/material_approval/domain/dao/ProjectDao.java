@@ -6,6 +6,8 @@ import pl.matkoc.material_approval.domain.model.Project;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+import java.util.List;
 
 @Repository
 @Transactional
@@ -29,5 +31,11 @@ public class ProjectDao {
     public void delete(Project project){
         entityManager.remove(entityManager.contains(project) ?
                 project : entityManager.merge(project));
+    }
+
+    public List<Project> findAllProject(){
+        TypedQuery<Project> query = entityManager.createQuery("SELECT p FROM Project p", Project.class);
+        List<Project> projectList = query.getResultList();
+        return projectList;
     }
 }

@@ -10,10 +10,14 @@
 <html>
 <head>
     <title>Dodawanie projektu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
 <h2>Dodaj nowy projekt</h2>
-<form:form method="post" modelAttribute="project" action="/addProject">
+<form:form method="post" modelAttribute="project" action="/project/addProject">
     Numer projekty:
     <form:label path="number"/>
     <form:input path="number"/>

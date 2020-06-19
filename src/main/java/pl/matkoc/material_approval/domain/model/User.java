@@ -1,5 +1,6 @@
 package pl.matkoc.material_approval.domain.model;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -12,6 +13,7 @@ import java.util.List;
 @Table(name = "users")
 @Getter
 @Setter
+@EqualsAndHashCode(callSuper = false)
 @ToString(exclude = "password", callSuper = true)
 public class User extends ParentEntity{
 

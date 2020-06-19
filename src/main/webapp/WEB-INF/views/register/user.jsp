@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body>
-<h2>Zarejestruj się</h2>
+<body style="background-color: darkgrey">
+
+<%--<a href="http://localhost:8080/login">Zaloguj sie</a><br><br><br>--%>
+<b class="content has-text-">Rejestracja</b>
 <section class="section">
     <div class="allClassesContainer">
         <form:form method="post" modelAttribute="inz" action="/register-inz">
@@ -53,8 +55,8 @@
                 </p>
             </div>
             <div class="buttons">
-                <form:button type="submit" class="button is primary">Zarejestruj</form:button>
-                <form:button type="reset" class="button is secondary">Wyczyść</form:button>
+                <form:button type="submit" class="button is-primary">Zarejestruj</form:button>
+                <form:button type="reset" class="button is-secondary">Wyczyść</form:button>
             </div>
             <security:csrfInput/>
         </form:form>

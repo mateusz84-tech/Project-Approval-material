@@ -17,7 +17,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body style="background-color: #1db363">
-<h2 style="align: center">Lista materiałów</h2>
+<h2 style="align: center">Lista materiałów do akceptacji</h2>
 <div class="table-container">
     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" style="background-color: lightsteelblue">
         <tr>
@@ -41,7 +41,7 @@
             <td>${material.created}</td>
             <td>${material.updated}</td>
             <td><a href="${material.link}">Link</a></td>
-            <td><a href="/inspector/confirmMaterial?id=${material.id}">Zatwierdź</a></td>
+            <td><a href="${pageContext.request.contextPath}/inspector/confirmMaterial?id=${material.id}">Zatwierdź</a></td>
         </tr>
         </c:forEach>
     </table>

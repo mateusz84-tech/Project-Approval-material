@@ -1,6 +1,5 @@
 package pl.matkoc.material_approval.controller;
 
-import org.dom4j.rule.Mode;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -60,7 +59,7 @@ public class MaterialController {
     @PostMapping("/delete")
     public String prepareDeleteMaterial(Material material){
         Material original = materialDao.readById(material.getId());
-        materialDao.delete(material);
+        materialDao.delete(original);
         return "redirect:/material/list";
     }
 

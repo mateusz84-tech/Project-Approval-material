@@ -17,10 +17,13 @@
 </head>
 <body>
 <h2>Dostępne akcje</h2>
-<a href="${pageContext.request.contextPath}/material/add">Dodaj nowy materiał</a><br/>
-<a href="${pageContext.request.contextPath}/material/delete">Usuń materiał</a><br/>
-<a href="${pageContext.request.contextPath}/addProject">Dodaj nowy projekt</a><br/>
-<a href="${pageContext.request.contextPath}/material/list">Lista materiałów</a><br/>
-<a href="http://localhost:8080/logout">Wyloguj</a>
+<nav class="breadcrumb is-large" aria-label="breadcrumbs">
+    <ul>
+        <li><a href="${pageContext.request.contextPath}/project/addProject">Dodaj nowy projekt</a></li>
+        <li><a href="${pageContext.request.contextPath}/material/add">Dodaj nowy materiał</a></li>
+        <li><a href="${pageContext.request.contextPath}/material/list">Lista materiałów</a></li>
+        <li><a href="http://localhost:8080/logout">Wyloguj</a></li>
+    </ul>
+</nav>
 </body>
 </html>

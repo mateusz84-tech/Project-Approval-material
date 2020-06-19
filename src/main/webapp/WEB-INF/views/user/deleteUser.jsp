@@ -12,8 +12,6 @@
     <title>Usuwanie użytkownika</title>
 </head>
 <body>
-<form:form method="post" modelAttribute="material">
 
-</form:form>
 </body>
 </html>

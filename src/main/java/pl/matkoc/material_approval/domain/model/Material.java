@@ -18,7 +18,7 @@ public class Material extends ParentEntity{
 
     @Column(nullable = false, unique = true)
     private String materials;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String description;
     private String approved;
     private String comments;
