@@ -50,8 +50,8 @@ public class InspectorController {
         originalConfirm.setComments(material.getComments());
         originalConfirm.setApproved(material.getApproved());
 
-        materialDao.update(material);
-        return "redirect:/inspector/editList";
+        materialDao.update(originalConfirm);
+        return "redirect:/listMaterial";
     }
 
     @GetMapping("/inspectorBuildingList")
