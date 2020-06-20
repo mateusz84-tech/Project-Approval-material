@@ -34,6 +34,9 @@
     <div class="navbar-brand">
     <a class="navbar-item" href="http://localhost:8080/material/electricalList">Materiały branża elektryczna</a>
     </div>
+    <div class="navbar-brand">
+        <a class="navbar-item" href="http://localhost:8080/user/action">Akcje użytkownika</a>
+    </div>
 </nav>
     <div class="table-container">
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" style="background-color: lightsteelblue">
@@ -66,6 +69,5 @@
 </tr>
 </table>
     </div>
-
 </body>
 </html>
