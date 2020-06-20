@@ -54,9 +54,24 @@ public class InspectorController {
         return "redirect:/inspector/editList";
     }
 
-    @GetMapping("/buildingList")
+    @GetMapping("/inspectorBuildingList")
     public String showAllBuildingMaterial(Model model){
-        model.addAttribute("buildingListMaterial", materialDao.findAllWithTradeBuilding());
+        model.addAttribute("buildingListMaterial",
+                materialDao.findAllWithTradeBuilding());
         return "inspector/buildingList";
+    }
+
+    @GetMapping("/inspectorSanitaryList")
+    public String showAllSanitaryMaterial(Model model){
+        model.addAttribute("sanitaryListMaterial",
+                materialDao.findAllWithTradeSanitary());
+        return "inspector/sanitaryList";
+    }
+
+    @GetMapping("/inspectorElectricalList")
+    public String showAllElectricalMaterial(Model model){
+        model.addAttribute("inspectorElectricalListMaterial",
+                materialDao.findAllWithTradeElectrical());
+        return "inspector/electricalList";
     }
 }

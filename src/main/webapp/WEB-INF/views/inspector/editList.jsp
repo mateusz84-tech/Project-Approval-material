@@ -18,7 +18,21 @@
 </head>
 <body style="background-color: #1db363">
 <h2 style="align: center">Lista materiałów do akceptacji</h2>
-<a href="http://localhost:8080/buildingList">Branża budowlana</a>
+
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="http://localhost:8080/inspectorBuildingList">Branża budowlana</a>
+    </div>
+    <div class="navbar-brand">
+        <a class="navbar-item" href="http://localhost:8080/inspectorSanitaryList">Branża sanitarna</a>
+    </div>
+    <div class="navbar-brand">
+        <a class="navbar-item" href="http://localhost:8080/inspectorElectricalList">Branża elektryczna</a>
+    </div>
+    <div class="navbar-brand">
+        <a class="navbar-item" href="http://localhost:8080/inspector/action">Powrót do strony głównej</a>
+    </div>
+</nav>
 <div class="table-container">
     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" style="background-color: lightsteelblue">
         <tr>
