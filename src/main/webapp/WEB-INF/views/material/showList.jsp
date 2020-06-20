@@ -18,11 +18,23 @@
 </head>
 <body style="background-color: lightsteelblue">
 <h2 style="color:cornsilk">Lista materiałów</h2><br>
-<a href="http://localhost:8080/material/add">Dodaj następny</a><br>
-<a href="http://localhost:8080/user/action">Powrót do głównej strony</a><br>
-<a href="http://localhost:8080/material/buildingList">Materiały branża budowlana</a><br>
-<a href="http://localhost:8080/material/sanitaryList">Materiały branża sanitarna</a><br>
-<a href="http://localhost:8080/material/electricalList">Materiały branża elektryczna</a>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="http://localhost:8080/material/add">Dodaj następny</a>
+    </div>
+    <div class="navbar-brand">
+    <a class="navbar-item" href="http://localhost:8080/user/action">Powrót do głównej strony</a>
+    </div>
+    <div class="navbar-brand">
+    <a class="navbar-item" href="http://localhost:8080/material/buildingList">Materiały branża budowlana</a>
+    </div>
+    <div class="navbar-brand">
+    <a class="navbar-item" href="http://localhost:8080/material/sanitaryList">Materiały branża sanitarna</a>
+    </div>
+    <div class="navbar-brand">
+    <a class="navbar-item" href="http://localhost:8080/material/electricalList">Materiały branża elektryczna</a>
+    </div>
+</nav>
     <div class="table-container">
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" style="background-color: lightsteelblue">
     <tr>
