@@ -45,7 +45,7 @@ public class MaterialController {
         original.setDescription(material.getDescription());
         original.setLink(material.getLink());
 
-        materialDao.update(material);
+        materialDao.update(original);
         return "redirect:/material/list";
     }
 
