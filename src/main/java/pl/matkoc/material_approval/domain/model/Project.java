@@ -16,11 +16,11 @@ import java.util.List;
 @Table(name = "projects")
 @Getter
 @Setter
-@ToString @EqualsAndHashCode
+@ToString @EqualsAndHashCode(callSuper = false)
 public class Project extends ParentEntity{
 
     @Column(nullable = false, unique = true)
-    private String number;
+    private Integer number;
     @Column(nullable = false, unique = true)
     private String name;
 

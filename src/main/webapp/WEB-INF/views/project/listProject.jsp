@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: user
@@ -9,11 +10,31 @@
 <html>
 <head>
     <title>Lista projektów</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-<p>Lista projektów:</p>
-${project.name}
-${project.number}
+<p>Dodano projekt:</p>
+
+<p>Nazwa budowy: ${project.name}</p>
+<p>Numer budowy ${project.number}</p>
+
+<table class="table is bordered is-striped ui-narrow is-hoverable is-fullwidth" style="background-color: lightsteelblue">
+    <tr>
+        <th>Lp.</th>
+        <th>Nazwa budowy</th>
+        <th>Numer budowy</th>
+    </tr>
+    <c:forEach items="${project}" var="project" varStatus="stat">
+        <tr>
+            <td>${stat.count}</td>
+            <td>${project.name}</td>
+            <td>${project.number}</td>
+        </tr>
+    </c:forEach>
+</table>
 
 <nav class="breadcrumb is-large" aria-label="breadcrumbs">
     <a href="http://localhost:8080/user/action">Powrót do strony wyboru.</a>

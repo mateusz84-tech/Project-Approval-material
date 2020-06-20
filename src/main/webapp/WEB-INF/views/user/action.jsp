@@ -26,6 +26,6 @@
     </ul>
 </nav>
 <p>Lista projektów</p>
-${project}
+
 </body>
 </html>

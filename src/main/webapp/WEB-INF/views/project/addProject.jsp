@@ -21,15 +21,15 @@
     <div class="allClassesContainer">
 <form:form method="post" modelAttribute="project" action="/project/addProject">
     <div class="field">
-    <div class="control">
-    <form:label path="number"/>Numer projekty:
-    <form:input path="number"/>
-    </div>
+        <div class="control">
+            <form:label path="name"/>Nazwa projektu:
+            <form:input path="name" calss="input is-small"/>
+        </div>
     </div>
     <div class="field">
         <div class="control">
-    <form:label path="name"/>Nazwa projektu:
-    <form:input path="name"/>
+            <form:label path="number"/>Numer projektu:
+            <form:input path="number" class="input is-small"/>
         </div>
     </div>
     <div class="buttons">
@@ -37,7 +37,6 @@
     </div>
 </form:form>
     </div>
-
 </section>
 </body>
 </html>

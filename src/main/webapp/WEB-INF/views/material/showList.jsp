@@ -16,10 +16,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body style="background-color: grey">
+<body style="background-color: lightsteelblue">
 <h2 style="color:cornsilk">Lista materiałów</h2><br>
 <a href="http://localhost:8080/material/add">Dodaj następny</a><br>
-<a href="http://localhost:8080/user/action">Powrót do głównej strony</a>
+<a href="http://localhost:8080/user/action">Powrót do głównej strony</a><br>
+<a href="http://localhost:8080/material/buildingList">Materiały branża budowlana</a><br>
+<a href="http://localhost:8080/material/sanitaryList">Materiały branża sanitarna</a><br>
+<a href="http://localhost:8080/material/electricalList">Materiały branża elektryczna</a>
     <div class="table-container">
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" style="background-color: lightsteelblue">
     <tr>

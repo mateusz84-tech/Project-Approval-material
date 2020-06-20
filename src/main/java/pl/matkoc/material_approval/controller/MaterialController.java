@@ -69,4 +69,22 @@ public class MaterialController {
         model.addAttribute("materials", materialDao.findAll());
         return "material/showList";
     }
+
+    @GetMapping("/buildingList")
+    public String buildingMaterialList(Model model){
+        model.addAttribute("buildingListMaterial", materialDao.findAllWithTradeBuilding());
+        return "material/buildingList";
+    }
+    @GetMapping("/sanitaryList")
+    public String sanitaryMaterialList(Model model){
+        model.addAttribute("sanitaryListMaterial", materialDao.findAllWithTradeSanitary());
+        return "material/sanitaryList";
+    }
+
+    @GetMapping("/electricalList")
+    public String electricalMaterialList(Model model){
+        model.addAttribute("electricalListMaterial", materialDao.findAllWithTradeElectrical());
+        return "material/electricalList";
+    }
+
 }

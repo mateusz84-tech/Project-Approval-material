@@ -22,6 +22,7 @@ public class Material extends ParentEntity{
     private String description;
     private String approved;
     private String comments;
+    private String trade;
     @Column(name = "created_on")
     private LocalDate created;
     @Column(name = "updated_on")

@@ -12,7 +12,6 @@
     <title>Dodawanie materiałów</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Witaj w naszym portfolio!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
@@ -35,9 +34,15 @@
         </div>
     </div>
     <div class="field">
+        <div calss="control">
+            <form:label path="trade"/>Branża:
+            <form:input path="trade" class="input is-small"/>
+        </div>
+    </div>
+    <div class="field">
         <div class="control">
             <form:label path="link"/>Link do dokumentów:
-            <form:input path="link"/>
+            <form:input path="link" class="input is-small"/>
         </div>
     </div>
     <div class="buttons">
