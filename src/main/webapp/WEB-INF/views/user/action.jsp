@@ -20,12 +20,13 @@
 <nav class="breadcrumb is-large" aria-label="breadcrumbs">
     <ul>
         <li><a href="${pageContext.request.contextPath}/project/addProject">Dodaj nowy projekt</a></li>
+        <li><a href="${pageContext.request.contextPath}/project/showList">Lista projektów</a></li>
         <li><a href="${pageContext.request.contextPath}/material/add">Dodaj nowy materiał</a></li>
         <li><a href="${pageContext.request.contextPath}/material/list">Lista materiałów</a></li>
         <li><a href="http://localhost:8080/logout">Wyloguj</a></li>
     </ul>
 </nav>
-<p>Lista projektów</p>
+
 
 </body>
 </html>
