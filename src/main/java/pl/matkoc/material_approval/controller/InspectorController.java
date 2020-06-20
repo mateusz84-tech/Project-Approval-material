@@ -53,4 +53,10 @@ public class InspectorController {
         materialDao.update(material);
         return "redirect:/inspector/editList";
     }
+
+    @GetMapping("/buildingList")
+    public String showAllBuildingMaterial(Model model){
+        model.addAttribute("buildingListMaterial", materialDao.findAllWithTradeBuilding());
+        return "inspector/buildingList";
+    }
 }
