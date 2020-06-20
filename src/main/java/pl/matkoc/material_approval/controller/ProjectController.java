@@ -38,4 +38,11 @@ public class ProjectController {
         model.addAttribute("project", projectDao.findAllProject());
         return "project/listProject";
     }
+
+//    public String processDeleteProject(Model model,
+//                                       @RequestParam Long id){
+//        Project project = projectDao.readById(id);
+//        model.addAttribute("projectId", project);
+//        return "project/delete";
+//    }
 }

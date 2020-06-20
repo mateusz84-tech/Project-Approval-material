@@ -25,13 +25,15 @@
         <th>Nazwa budowy</th>
         <th>Numer budowy</th>
         <th>Wybierz</th>
+        <th>Usuń</th>
     </tr>
     <c:forEach items="${project}" var="project" varStatus="stat">
         <tr>
             <td>${stat.count}</td>
             <td>${project.name}</td>
             <td>${project.number}</td>
-<%--            <td>${project.materialsList.id}</td>--%>
+            <td><a href="http://localhost:8080/material/list">Lista materiałów</a></td>
+            <td><a href="http://localhost:8080/project/delete?id=${project.id}">Usuń</a></td>
         </tr>
     </c:forEach>
 </table>
