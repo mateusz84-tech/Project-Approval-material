@@ -16,22 +16,22 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-<p>Dodano projekt:</p>
-
-<p>Nazwa budowy: ${project.name}</p>
-<p>Numer budowy ${project.number}</p>
-
+<%--<p>Nazwa budowy: ${project.name}</p>--%>
+<%--<p>Numer budowy ${project.number}</p>--%>
+<h2>Lista budów</h2>
 <table class="table is bordered is-striped ui-narrow is-hoverable is-fullwidth" style="background-color: lightsteelblue">
     <tr>
         <th>Lp.</th>
         <th>Nazwa budowy</th>
         <th>Numer budowy</th>
+        <th>Wybierz</th>
     </tr>
     <c:forEach items="${project}" var="project" varStatus="stat">
         <tr>
             <td>${stat.count}</td>
             <td>${project.name}</td>
             <td>${project.number}</td>
+<%--            <td>${project.materialsList.id}</td>--%>
         </tr>
     </c:forEach>
 </table>
