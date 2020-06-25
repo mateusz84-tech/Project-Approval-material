@@ -21,8 +21,8 @@
         <h2>Lista materiałów budowlanych</h2>
     </div>
     <nav class="navbar">
-        <div class="navbar-item">
-            <a class="navbar-item" href="http://localhost:8080/listMaterial">Powrót do strony głównej z materiałami</a>
+        <div class="navbar-brand">
+                <a class="navbar-item" href="http://localhost:8080/listMaterial">Powrót do strony głównej z materiałami</a>
         </div>
     </nav>
 </nav>
@@ -48,8 +48,16 @@
             <td>${listBuilding.comments}</td>
             <td>${listBuilding.created}</td>
             <td>${listBuilding.updated}</td>
-            <td><a href="${listBuilding.link}">Link</a></td>
-            <td><a href="${pageContext.request.contextPath}/inspector/confirmMaterial?id=${listBuilding.id}">Zatwierdź</a></td>
+            <td>
+                <button class="button">
+                    <a href="${listBuilding.link}">Link</a>
+                </button>
+            </td>
+            <td>
+                <button class="button">
+                <a href="${pageContext.request.contextPath}/inspector/confirmMaterial?id=${listBuilding.id}">Zatwierdź</a>
+                </button>
+            </td>
         </tr>
         </c:forEach>
     </table>

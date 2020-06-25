@@ -46,8 +46,16 @@
             <td>${listEl.comments}</td>
             <td>${listEl.created}</td>
             <td>${listEl.updated}</td>
-            <td><a href="${listEl.link}">Link</a></td>
-            <td><a href="${pageContext.request.contextPath}/inspector/confirmMaterial?id=${listEl.id}">Zatwierdź</a></td>
+            <td>
+                <button class="button">
+                    <a href="${listEl.link}">Link</a>
+                </button>
+            </td>
+            <td>
+                <button class="button">
+                    <a href="${pageContext.request.contextPath}/inspector/confirmMaterial?id=${listEl.id}">Zatwierdź</a>
+                </button>
+            </td>
         </tr>
         </c:forEach>
     </table>

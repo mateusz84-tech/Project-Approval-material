@@ -44,7 +44,7 @@
 </section>
 <div class="container">
 <figure class="image is-32x32px">
-    <img src="hala.jpg" width="112" height="712">
+    <img src="hala.jpg" width="1068" height="712">
 </figure>
 </div>
 <progress class="progress is small is-primary" max="100">15%</progress>
@@ -55,6 +55,5 @@
         </p>
     </div>
 </footer>
-
 </body>
 </html>

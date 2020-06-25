@@ -60,9 +60,21 @@
             <td>${material.comments}</td>
             <td>${material.created}</td>
             <td>${material.updated}</td>
-            <td><a href="${material.link}">Link</a></td>
-            <td><a href="/material/edit?id=${material.id}">Edytuj</a></td>
-            <td><a href="/material/delete?id=${material.id}">Usuń</a></td>
+            <td>
+                <button class="button">
+                    <a href="${material.link}">Link</a>
+                </button>
+            </td>
+            <td>
+                <button class="button">
+                    <a href="/material/edit?id=${material.id}">Edytuj</a>
+                </button>
+            </td>
+            <td>
+                <button class="button">
+                    <a href="/material/delete?id=${material.id}">Usuń</a>
+                </button>
+            </td>
         </tr>
         </c:forEach>
     </td>

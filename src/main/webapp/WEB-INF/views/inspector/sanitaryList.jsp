@@ -46,8 +46,16 @@
             <td>${listSanitary.comments}</td>
             <td>${listSanitary.created}</td>
             <td>${listSanitary.updated}</td>
-            <td><a href="${listSanitary.link}">Link</a></td>
-            <td><a href="${pageContext.request.contextPath}/inspector/confirmMaterial?id=${listSanitary.id}">Zatwierdź</a></td>
+            <td>
+                <button class="button">
+                    <a href="${listSanitary.link}">Link</a>
+                </button>
+            </td>
+            <td>
+                <button class="button">
+                    <a href="${pageContext.request.contextPath}/inspector/confirmMaterial?id=${listSanitary.id}">Zatwierdź</a>
+                </button>
+            </td>
         </tr>
         </c:forEach>
     </table>

@@ -15,12 +15,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body style="background-color: tan">
-<h2></h2>
-<h1 align="center">Dostępne akcje</h1>
-<div align="center">
-<a href="http://localhost:8080/listMaterial">Wyświetl listę materiałów</a><br>
-<a href="http://localhost:8080/logout">Wyloguj</a>
-</div>
+<body style="background-color: dodgerblue">
+<section class="section">
+    <div class="notification is-primary is-light">
+        <h1 align="center">Dostępne akcje</h1>
+    </div>
+
+    <div class="buttons">
+        <button class="button is-fullwidth">
+            <a href="http://localhost:8080/listMaterial">Wyświetl listę materiałów</a><br>
+        </button>
+    </div>
+    <div class="buttons">
+        <button class="button is-fullwidth">
+            <a href="http://localhost:8080/logout">Wyloguj</a>
+        </button>
+    </div>
+</section>
+<figure class="image is-1068x712">
+    <img src="/hala.jpg"/>
+</figure>
 </body>
 </html>
