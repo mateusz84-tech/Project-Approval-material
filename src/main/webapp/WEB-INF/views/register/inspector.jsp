@@ -18,7 +18,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body style="background-color: grey">
-<H2>Rejestracja</H2>
+<b class="content-has-text">Rejestracja</b>
 <section class="section">
 <div class="leftContainer">
     <form:form method="post" modelAttribute="insp" action="/register-insp">
@@ -56,8 +56,8 @@
             </p>
         </div>
         <div class="buttons">
-            <form:button class="button is primary" type="submit">Zarejestruj</form:button>
-            <form:button class="button is secondary" type="reset" >Wyczyść</form:button>
+            <form:button class="button is-primary" type="submit">Zarejestruj</form:button>
+            <form:button class="button" type="reset" >Wyczyść</form:button>
         </div>
         <security:csrfInput/>
     </form:form>
