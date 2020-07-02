@@ -9,4 +9,4 @@ Inpektor po zalogowaniu może przy pomocy formularza zaakceptować materiał, lu
 
 Technologie użyte w aplikacji:
 
-Java Sprong Boot Spring security Hibernate Jpql
+Java, Spring Boot, Spring security, Hibernate, Jpql
