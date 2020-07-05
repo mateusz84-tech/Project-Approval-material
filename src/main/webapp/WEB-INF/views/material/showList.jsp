@@ -67,12 +67,12 @@
             </td>
             <td>
                 <button class="button">
-                    <a href="/material/edit?id=${material.id}">Edytuj</a>
+                    <a href="${pageContext.request.contextPath}/material/edit?id=${material.id}">Edytuj</a>
                 </button>
             </td>
             <td>
                 <button class="button">
-                    <a href="/material/delete?id=${material.id}">Usuń</a>
+                    <a href="${pageContext.request.contextPath}/material/delete?id=${material.id}">Usuń</a>
                 </button>
             </td>
         </tr>

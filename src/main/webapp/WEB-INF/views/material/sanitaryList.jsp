@@ -40,8 +40,8 @@
         <td>${sanitaryMaterial.created}</td>
         <td>${sanitaryMaterial.updated}</td>
         <td><a href="${sanitaryMaterial.link}">Link</a></td>
-        <td><a href="/material/edit?id=${sanitaryMaterial.id}"> Edytuj</a></td>
-        <td><a href="/material/delete?id${sanitaryMaterial.id}">Usuń</a></td>
+        <td><a href="${pageContext.request.contextPath}/material/edit?id=${sanitaryMaterial.id}"> Edytuj</a></td>
+        <td><a href="${pageContext.request.contextPath}/material/delete?id${sanitaryMaterial.id}">Usuń</a></td>
     </tr>
     </c:forEach>
     </td>

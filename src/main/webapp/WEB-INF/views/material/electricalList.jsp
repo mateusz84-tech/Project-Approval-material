@@ -39,8 +39,8 @@
         <td>${electricalMaterial.created}</td>
         <td>${electricalMaterial.updated}</td>
         <td><a href="${electricalMaterial.link}">Link</a></td>
-        <td><a href="/material/edit?id=${electricalMaterial.id}"> Edytuj</a></td>
-        <td><a href="/material/delete?id${electricalMaterial.id}">Usuń</a></td>
+        <td><a href="${pageContext.request.contextPath}/material/edit?id=${electricalMaterial.id}"> Edytuj</a></td>
+        <td><a href="${pageContext.request.contextPath}/material/delete?id${electricalMaterial.id}">Usuń</a></td>
     </tr>
     </c:forEach>
     </td>
