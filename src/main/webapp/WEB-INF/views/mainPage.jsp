@@ -34,10 +34,10 @@
     <div class="container">
         <div class="columns">
             <div class="column is-half">
-                <a style="color: lightgreen" href="http://localhost:8080/register-insp">Inspektorzy</a><br/>
+                <a style="color: lightgreen" href="${pageContext.request.contextPath}/register-insp">Inspektorzy</a><br/>
             </div>
             <div class="column is-half">
-                <a style="color: lightgreen" href="http://localhost:8080/register-inz">Inżynier</a>
+                <a style="color: lightgreen" href="${pageContext.request.contextPath}/register-inz">Inżynier</a>
             </div>
         </div>
     </div>

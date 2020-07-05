@@ -23,10 +23,8 @@
         <li><a href="${pageContext.request.contextPath}/project/showList">Lista projektów</a></li>
         <li><a href="${pageContext.request.contextPath}/material/add">Dodaj nowy materiał</a></li>
         <li><a href="${pageContext.request.contextPath}/material/list">Lista materiałów</a></li>
-        <li><a href="http://localhost:8080/logout">Wyloguj</a></li>
+        <li><a href="${pageContext.request.contextPath}/logout">Wyloguj</a></li>
     </ul>
 </nav>
-
-
 </body>
 </html>
