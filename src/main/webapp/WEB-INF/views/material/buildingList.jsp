@@ -40,8 +40,8 @@
                     <td>${buildingMaterial.created}</td>
                     <td>${buildingMaterial.updated}</td>
                     <td><a href="${buildingMaterial.link}">Link</a></td>
-                    <td><a href="/material/edit?id=${buildingMaterial.id}"> Edytuj</a></td>
-                    <td><a href="/material/delete?id${buildingMaterial.id}">Usuń</a></td>
+                    <td><a href="${pageContext.request.contextPath}/material/edit?id=${buildingMaterial.id}"> Edytuj</a></td>
+                    <td><a href="${pageContext.request.contextPath}/material/delete?id${buildingMaterial.id}">Usuń</a></td>
                 </tr>
             </c:forEach>
         </td>
