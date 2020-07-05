@@ -17,7 +17,7 @@
 </head>
 <body>
 <h2>Lista materiałów branża sanitarna</h2>
-<a href="http://localhost:8080/material/list">Powrót do strony głównej z materiałami</a>
+<a href="${pageContext.request.contextPath}/material/list">Powrót do strony głównej z materiałami</a>
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" style="background-color: lightsteelblue">
     <tr>
         <th>Lp</th>
