@@ -39,7 +39,7 @@
 </table>
 
 <nav class="breadcrumb is-large" aria-label="breadcrumbs">
-    <a href="http://localhost:8080/user/action">Powrót do strony wyboru.</a>
+    <a href="${pageContext.request.contextPath}/user/action">Powrót do strony wyboru.</a>
 </nav>
 </body>
 </html>
