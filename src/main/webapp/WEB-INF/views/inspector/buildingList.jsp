@@ -22,7 +22,7 @@
     </div>
     <nav class="navbar">
         <div class="navbar-brand">
-                <a class="navbar-item" href="http://localhost:8080/listMaterial">Powrót do strony głównej z materiałami</a>
+                <a class="navbar-item" href="${pageContext.request.contextPath}/listMaterial">Powrót do strony głównej z materiałami</a>
         </div>
     </nav>
 </nav>

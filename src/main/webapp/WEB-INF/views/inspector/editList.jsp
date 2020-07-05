@@ -22,22 +22,22 @@
     <nav class="navbar">
         <div class="navbar-brand">
             <button class="buttons">
-                <a class="navbar-item" href="http://localhost:8080/inspectorBuildingList">Branża budowlana</a>
+                <a class="navbar-item" href="${pageContext.request.contextPath}/inspectorBuildingList">Branża budowlana</a>
             </button>
         </div>
         <div class="navbar-brand">
             <button class="buttons">
-                <a class="navbar-item" href="http://localhost:8080/inspectorSanitaryList">Branża sanitarna</a>
+                <a class="navbar-item" href="${pageContext.request.contextPath}/inspectorSanitaryList">Branża sanitarna</a>
             </button>
         </div>
         <div class="navbar-brand">
             <button class="buttons">
-                <a class="navbar-item" href="http://localhost:8080/inspectorElectricalList">Branża elektryczna</a>
+                <a class="navbar-item" href="${pageContext.request.contextPath}/inspectorElectricalList">Branża elektryczna</a>
             </button>
         </div>
         <div class="navbar-brand">
             <button class="buttons">
-                <a class="navbar-item" href="http://localhost:8080/inspector/action">Powrót do strony głównej</a>
+                <a class="navbar-item" href="${pageContext.request.contextPath}/inspector/action">Powrót do strony głównej</a>
             </button>
         </div>
     </nav>

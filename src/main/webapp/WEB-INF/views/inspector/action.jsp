@@ -23,12 +23,12 @@
 
     <div class="buttons">
         <button class="button is-fullwidth">
-            <a href="http://localhost:8080/listMaterial">Wyświetl listę materiałów</a><br>
+            <a href="${pageContext.request.contextPath}/listMaterial">Wyświetl listę materiałów</a><br>
         </button>
     </div>
     <div class="buttons">
         <button class="button is-fullwidth">
-            <a href="http://localhost:8080/logout">Wyloguj</a>
+            <a href="${pageContext.request.contextPath}/logout">Wyloguj</a>
         </button>
     </div>
 </section>
