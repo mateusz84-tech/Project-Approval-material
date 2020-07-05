@@ -19,7 +19,7 @@
 </head>
 <body style="background-color: darkgrey">
 
-<%--<a href="http://localhost:8080/login">Zaloguj sie</a><br><br><br>--%>
+<%--<a href="/login">Zaloguj sie</a><br><br><br>--%>
 <b class="content has-text-">Rejestracja</b>
 <section class="section">
     <div class="allClassesContainer">

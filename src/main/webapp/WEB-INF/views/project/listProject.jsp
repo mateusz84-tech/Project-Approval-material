@@ -32,8 +32,8 @@
             <td>${stat.count}</td>
             <td>${project.name}</td>
             <td>${project.number}</td>
-            <td><a href="/material/list">Lista materiałów</a></td>
-            <td><a href="/project/delete?id=${project.id}">Usuń</a></td>
+            <td><a href="${pageContext.request.contextPath}/material/list">Lista materiałów</a></td>
+            <td><a href="${pageContext.request.contextPath}/project/delete?id=${project.id}">Usuń</a></td>
         </tr>
     </c:forEach>
 </table>
