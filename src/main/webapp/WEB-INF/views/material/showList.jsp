@@ -20,22 +20,22 @@
 <h2 style="color:cornsilk">Lista materiałów</h2><br>
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="http://localhost:8080/material/add">Dodaj następny</a>
+        <a class="navbar-item" href="${pageContext.request.contextPath}/material/add">Dodaj następny</a>
     </div>
     <div class="navbar-brand">
-    <a class="navbar-item" href="http://localhost:8080/user/action">Powrót do głównej strony</a>
+    <a class="navbar-item" href="${pageContext.request.contextPath}/user/action">Powrót do głównej strony</a>
     </div>
     <div class="navbar-brand">
-    <a class="navbar-item" href="http://localhost:8080/material/buildingList">Materiały branża budowlana</a>
+    <a class="navbar-item" href="${pageContext.request.contextPath}/material/buildingList">Materiały branża budowlana</a>
     </div>
     <div class="navbar-brand">
-    <a class="navbar-item" href="http://localhost:8080/material/sanitaryList">Materiały branża sanitarna</a>
+    <a class="navbar-item" href="${pageContext.request.contextPath}/material/sanitaryList">Materiały branża sanitarna</a>
     </div>
     <div class="navbar-brand">
-    <a class="navbar-item" href="http://localhost:8080/material/electricalList">Materiały branża elektryczna</a>
+    <a class="navbar-item" href="${pageContext.request.contextPath}/material/electricalList">Materiały branża elektryczna</a>
     </div>
     <div class="navbar-brand">
-        <a class="navbar-item" href="http://localhost:8080/user/action">Akcje użytkownika</a>
+        <a class="navbar-item" href="${pageContext.request.contextPath}/user/action">Akcje użytkownika</a>
     </div>
 </nav>
     <div class="table-container">
