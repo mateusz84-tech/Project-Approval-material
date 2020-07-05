@@ -33,7 +33,7 @@
     </div>
 </section>
 <figure class="image is-1068x712">
-    <img src="/hala.jpg"/>
+    <img src="${pageContext.request.contextPath}/hala.jpg"/>
 </figure>
 </body>
 </html>
