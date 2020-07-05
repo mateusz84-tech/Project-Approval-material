@@ -51,7 +51,7 @@
 <footer class="footer" style="">
     <div class="content has-text-centered">
         <p>
-            <strong>Making by Mateusz Kocierz</strong>
+            <strong>Made by Mateusz Kocierz</strong>
         </p>
     </div>
 </footer>
